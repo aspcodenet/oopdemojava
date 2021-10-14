@@ -16,7 +16,13 @@ public final class App {
 
 
 
-        // Bil b = new Bil();
+        // b blir ett OBJEKT ("riktigt hus" som är SKAPAT från ritningen "Bil")
+        // OBJEKT skapar vi genom NEW
+
+        // Bil b = new Bil();  // SKAPA UPP EN INSTANS AV KLASSEN
+                                // instansierat Bilklassen?
+                                 // SKAPA UPP ETT OBJEKT AV KLASSEN
+                                 // instans = objekt
         // b.setRegno("AAA111");
         // b.setYear(2016);
         // b.setModell("Volvo");
