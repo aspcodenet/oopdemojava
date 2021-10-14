@@ -18,11 +18,9 @@ public class BilRegister {
                 String modell = System.console().readLine();
                 System.out.print("Ange årsmodell:"); // 1973
                 int year = Integer.parseInt(System.console().readLine());
+                //year = -1111;
 
-                Bil b = new Bil();
-                b.setRegno(regno);
-                b.setModell(modell);
-                b.setYear(year);
+                Bil b = new Bil(regno, year,  modell); 
 
                 bilar.add(b);
             }
