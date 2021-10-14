@@ -18,6 +18,7 @@ public class Bil { //KLASS = RITNING
         setYear(year);
     }
   
+    //getters och setters
     public String getColor(){ return color;}    
     public void setColor(String s){color = s; }
 
