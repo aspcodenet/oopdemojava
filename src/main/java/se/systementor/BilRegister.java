@@ -2,29 +2,38 @@ package se.systementor;
 
 import java.util.ArrayList;
 
+
+
 public class BilRegister {
     
-    private ArrayList<String> bilar = new ArrayList<>();
+    private ArrayList<Bil> bilar = new ArrayList<>();
     
     public void run(){
         while(true){
             int sel = showMenuAndGetSelection();
             if(sel == 1){
-                System.out.print("Ange regnummer:");
+                System.out.print("Ange regnummer:"); //AAA111 = Volvo XC60
                 String regno = System.console().readLine();
-                bilar.add(regno);
+                System.out.print("Ange modell:"); //  BBB222 = Saab V4 
+                String modell = System.console().readLine();
+                System.out.print("Ange årsmodell:"); // 1973
+                int year = Integer.parseInt(System.console().readLine());
+
+                Bil b = new Bil();
+                b.setRegno(regno);
+                b.setModell(modell);
+                b.setYear(year);
+
+                bilar.add(b);
             }
             else if(sel == 2){
                 System.out.println("Följande bilar finns:");
-                for(String bil : bilar){
-                    System.out.println(bil);
+                for(Bil bil : bilar){
+                    System.out.println(bil.getRegno() + " " + bil.getModell());
                 }                
             }
             else if(sel == 0)
                 break;
-            
-                
-
         }
     }
 
