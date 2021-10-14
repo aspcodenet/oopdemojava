@@ -13,8 +13,20 @@ public final class App {
      */
     public static void main(String[] args) {
 
+        HockeyTeam team = new HockeyTeam("Tre Kronor");
+        
+        HockeyPlayer player1 = new HockeyPlayer("Peter Forsberg");
+        player1.setJersey(21);
 
+        HockeyPlayer player2 = new HockeyPlayer("Mats Sundin");
+        player2.setJersey(13);
 
+        team.addPlayer(player1);
+        team.addPlayer(player2);
+
+        int start = 1234;
+        //String s = "År " + start;
+        System.out.println("År " + start);
 
         // b blir ett OBJEKT ("riktigt hus" som är SKAPAT från ritningen "Bil")
         // OBJEKT skapar vi genom NEW
